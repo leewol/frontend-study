@@ -1,5 +1,13 @@
 # 💾 Local Storage & Session Storage & Cookie
 
+```
+ 0. Commonality
+ 1. Web Storage (Local & Session)
+ 2. Cookie
+ 3. Web Storage Comparison
+ 4. Local Storage vs. Session Storage vs. Cookie
+```
+
 - 클라이언트 상에서 key/value 쌍을 저장
 - value는 반드시 문자열
 - 동일 출처 정책(SOP, Same-Origin Policy)를 따르므로 다른 도메인에서 접근 불가
@@ -7,14 +15,9 @@
 
 <br />
 
-##### _동일 출처 정책은 어떤 출처에서 불러온 문서나 스크립트가 **다른 출처에서 가져온 리소스와 상호작용하는 것을 제한**하는 중요한 보안 방식입니다. 동일 출처 정책은 잠재적으로 해로울 수 있는 문서를 분리함으로써 공격받을 수 있는 경로를 줄여줍니다._
+##### _\*동일 출처 정책은 어떤 출처에서 불러온 문서나 스크립트가 다른 출처에서 가져온 리소스와 상호작용하는 것을 제한하는 중요한 보안 방식입니다. 동일 출처 정책은 잠재적으로 해로울 수 있는 문서를 분리함으로써 공격받을 수 있는 경로를 줄여줍니다._
 
 <br/>
-
-> 1. Web Storage (Local & Session)
-> 2. Cookie
-> 3. Local Storage vs. Session Storage
-> 4. Web Storage vs. Cookie
 
 <br/>
 
@@ -30,6 +33,8 @@ HTML5에서 브라우저에 key/value를 쿠키보다 더 직관적으로 저장
     - [Windows.sessionStorage](https://developer.mozilla.org/ko/docs/Web/API/Window/sessionStorage)
 - 페이지 프로토콜별로 저장한 자료가 구분되어, HTTP로 방문한 페이지에 데이터를 저장해도 같은 페이지의 HTTPS에 저장되지 않음
 - 서버에 불필요하게 데이터를 저장하지 않음
+
+<br />
 
 ## ✔ Cookie
 
