@@ -1,7 +1,7 @@
 # 📦 block & inline & inline-block
 
 CSS의 box model은 각각 block과 inline /  
-inner display type과 outer display type으로 나뉨
+inner display type과 outer display type으로 나뉜다
 
 <br/>
 
