@@ -1,5 +1,7 @@
 # 🖥 네이티브 객체(Native Object) vs 호스트 객체(Host Object)
 
+<br>
+
 ![host and native object](hostandnative.png)
 
 <br>
