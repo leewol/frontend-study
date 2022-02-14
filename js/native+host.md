@@ -38,6 +38,7 @@ ECMAScirpt의 실행 환경을 완성하기 위해 `Host 환경에서 제공`하
 - 자바스크립트 인터프리터가 내장된 호스트 환경에 정의됨
    - OS, Web browser, 노드, 런타임 등 실행 환경에 따라 제공 객체가 달라짐 
    - 예를 들어, 브라우저에서 동작하는 환경과 브라우저 외부에서 동작하는 환경의 자바스크립트(Node.js)는 다른 호스트 객체를 사용할 수 있음
+- 크로스 브라우징 문제를 발생시키기도 함
 - 종류
   - window, document, location, history, XMLHttpRequest, setTimeout, getElementsByTagName, querySelectorAll, ...
   - 전역객체(Global object !== Global Objects): 모든 객체의 유일한 최상위 객체 (브라우저의 window, 서버의 global 객체)
