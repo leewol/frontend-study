@@ -34,7 +34,8 @@ ECMAScirpt의 실행 환경을 완성하기 위해 `Host 환경에서 제공`하
 
 <br>
 
-- OS, Web browser에 따라 제공 객체가 달라짐
+- 자바스크립트 인터프리터가 내장된 호스트 환경에 정의됨
+   - OS, Web browser에 따라 제공 객체가 달라짐 
 - 네이티브가 아니면 모두 호스트 객체다
 - 종류
   - window, document, location, history, XMLHttpRequest, setTimeout, getElementsByTagName, querySelectorAll, ...
