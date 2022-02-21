@@ -1,6 +1,6 @@
 # 📚 메모리 힙(Memory Heap)과 콜 스택(Call Stack)
 
-![call stak & memory heap](./callstack+heap.png)
+![call stak & memory heap](../img/callstack+heap.png)
 
 자바스크립트 엔진이 구동되면서 코드를 읽고 실행하는 과정에서 중요하게 여겨지는 두 가지 단계:
 
@@ -84,7 +84,7 @@ Memory Heap이 제대로 관리되지 않아 **메모리 공간의 범위를 넘
 
 ### ➰ 스택 오버플로우(Stack Overflow)
 
-![stackoverflow](./stackoverflow.png)
+![stackoverflow](../img/stackoverflow.png)
 
 ```javascript
 function foo() {
@@ -115,7 +115,7 @@ let o = func();
 
 ### 1. Global Execution Context가 생성되고, 원시 값과 참조 값은 각각 Call Stack과 Heap에 저장
 
-![ch1](./ch1.png)
+![ch1](../img/ch1.png)
 
 - a, b는 각각 10, 35의 값을 보유한 메모리 주소와 같다
 - 참조 값
@@ -126,13 +126,13 @@ let o = func();
 
 ### 2. 함수 func()을 실행하면 새로운 Function Execution Context가 생성되고, 원시 값과 참조 값은 전과 동일하게 저장
 
-![ch2](./ch2.png)
+![ch2](../img/ch2.png)
 
 - func()에서 return되는 obj = {d: 45} 값이 Memory Heap에 저장
 
 ### 3. func()이 객체 obj을 리턴하여 o에 저장되고, 함수가 실행되었으므로 FEC는 Call Stack에서 제거
 
-![ch3](./ch3.png)
+![ch3](../img/ch3.png)
 
 - 전체 코드가 실행되고 나면 GEC도 Call Stack에서 제거
 - Memory Heap의 객체를 참조하는 스택 값이 없으므로 가비지 컬렉터(Garbage Collector)에 의해 모두 제거
@@ -142,7 +142,7 @@ let o = func();
 
 ## ✔ 가비지 컬렉터(Garbage Collector)
 
-![Mark and Sweep](./markandsweep.gif)
+![Mark and Sweep](../img/markandsweep.gif)
 
 Call Stack과 Memory Heap의 공간은 언제나 **한정적**이므로 이를 **효율적으로 관리**하기 위해서 더 이상 효용가치가 없다고 판단되는 변수, 함수 등을 **실행 종료 후 Memory Heap**에서 제거하는 동작을 수행해 주는 도구
 
