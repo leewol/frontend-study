@@ -190,8 +190,6 @@ myArray = ["a"]; //새로운 배열 할당 불가
 > 2. const를 통해 선언된 변수는 반드시 선언과 동시에 초기화되어야하며, 이를 통해 개발자는 스코프적인 측면에서 더욱 신중하게 변수를 배치해야함을 강요받게 됩니다. 이는 궁극적으로 더 나은 메모리 관리 및 성능으로 이어지게됩니다.
 > 3. 단지 코드를 보는 것만으로도 어떤 변수가 변경 불가능하고, 또 어떤 변수가 재할당이 가능한지 의사소통할 수 있기 때문입니다.
 
----
-
 ## ✔ 참고
 
 [콜 스택(Call stack)과 힙(Heap)](https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/javascript/stack-heap.md)  
