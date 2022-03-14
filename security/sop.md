@@ -49,7 +49,7 @@ document.domain = "othercompany.com";
 `http://company.com/dir/page.html`도 같은 스크립트를 실행할 경우, SOP 통과 가능
 
 
-**몇몇 브라우저가 지원하더라도, 보안 버그를 발생시킨느 등의 문제로 표준에서 제외되었고 사용하지 않는 게 좋음**
+**몇몇 브라우저가 지원하더라도, 보안 버그를 발생시키는 등의 문제로 표준에서 제외되었고 사용하지 않는 게 좋음**
 
 <br/>
 
@@ -79,11 +79,11 @@ Access-Control-Allow-Origin: https://foo.example
 
 - 프록시 서버는 클라이언트와 서버 사이에서 정보 교환을 도와주는 서버
 - 리소스 요청하고자 하는 서버의 `Access-Control-Allow-Origin` 속성 수정 불가능한 경우에 유용
-- Apache/Nginx 같은 웹 서버에서 프록시 기능 활성화 가능하고, CRA(Create-React-App)를 사용하고 있다면 `package.json`의 `proxy`값을 설정하여 프록시 서버 기능 호라성화 가능
+- Apache/Nginx 같은 웹 서버에서 프록시 기능 활성화 가능하고, CRA(Create-React-App)를 사용하고 있다면 `package.json`의 `proxy`값을 설정하여 프록시 서버 기능 활성화 가능
 - 서버를 한 단계 더 거치므로 기존 요청보다 **느리다**
 
 
-### JSONP(JSON with Padding)
+### 5. JSONP(JSON with Padding)
 데이터를 가공하는 콜백함수를 넘기는 방식
 
 - 최신 브라우저에서는 거의 사용 안 하고, 보안 문제가 있어서 CORS를 권장
