@@ -83,11 +83,7 @@
 
 웹킷 동작 과정 예시
 
-</center>
-
 <br>
-
-<center>
 
 ![geckoprocess](./img/gecko.png)
 
