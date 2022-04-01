@@ -77,15 +77,23 @@
 
 ### 렌더링 엔진 동작 과정
 
+<center>
+
 ![webkitprocess](./img/webkit.png)
 
-<center>웹킷 동작 과정 예시</center>
+웹킷 동작 과정 예시
+
+</center>
 
 <br>
 
+<center>
+
 ![geckoprocess](./img/gecko.png)
 
-<center>게코 동작 과정 예시</center>
+게코 동작 과정 예시
+
+</center>
 
 <br/>
 
