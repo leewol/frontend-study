@@ -19,9 +19,9 @@ function playSound(event) {
   key.classList.add("playing");
 }
 
-function removeTransition(e) {
+function removeTransition(event) {
   // transform이 아닌 transitionend는 신경 쓰지 말고
-  if (e.propertyName !== "transform") {
+  if (event.propertyName !== "transform") {
     return;
   }
 
