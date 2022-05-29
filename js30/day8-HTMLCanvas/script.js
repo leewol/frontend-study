@@ -10,10 +10,13 @@ ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
 ctx.lineWidth = 50;
+ctx.globalCompositeOperation = "multiply";
 
 let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
+let hue = 0;
+let direction = true;
 
 function draw(evt) {
   // mousedown일 때만 함수가 실행됨
@@ -21,11 +24,28 @@ function draw(evt) {
 
   console.log(evt);
 
+  ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
   ctx.beginPath();
   ctx.moveTo(lastX, lastY); // start from
   ctx.lineTo(evt.offsetX, evt.offsetY); // go to
   ctx.stroke();
+
   [lastX, lastY] = [evt.offsetX, evt.offsetY];
+
+  hue++;
+  if (hue >= 360) {
+    hue = 0;
+  }
+
+  if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+    direction = !direction;
+  }
+
+  if (direction) {
+    ctx.lineWidth++;
+  } else {
+    ctx.lineWidth--;
+  }
 }
 
 canvas.addEventListener("mousedown", (evt) => {
@@ -37,3 +57,5 @@ canvas.addEventListener("mousemove", draw);
 
 canvas.addEventListener("mouseup", () => (isDrawing = false));
 canvas.addEventListener("mouseout", () => (isDrawing = false));
+
+// 참고하기 : https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
