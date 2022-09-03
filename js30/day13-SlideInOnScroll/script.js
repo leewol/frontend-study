@@ -1,9 +1,9 @@
 // * 윈도우 이벤트와 디바운스 관련 !
 // * 그냥 scroll 이벤트를 찍어보면 top to bottom 스크롤에 약 50회 로그 -> 성능 문제 -> 디바운스 사용 (몇 초만 실행)
+// * 여기에서 사용된 것은 leading edge debouncing!
 
 // ? scrollX / scrollY : 수직/수평으로 얼마나 스크롤됐는지
 // ? innerHeight : 윈도우 창 크기 높이
-// ?
 
 function debounce(func, wait = 20, immediate = true) {
   var timeout;
